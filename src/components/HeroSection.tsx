@@ -14,6 +14,20 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-20 w-12 h-12 bg-afro-red rounded-full opacity-20 animate-bounce"></div>
       
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+        {/* Blackipedia Logo and Branding */}
+        <div className="mb-8">
+          <div className="flex items-center justify-center mb-4">
+            <div className="bg-white rounded-lg p-4 shadow-2xl">
+              <h1 className="text-3xl md:text-4xl font-bold text-afro-black">
+                BLACK<span className="text-afro-gold">IPEDIA</span>
+              </h1>
+            </div>
+          </div>
+          <p className="text-afro-cream text-lg mb-2">
+            Official Partner of <a href="https://blackipedia.net" target="_blank" rel="noopener noreferrer" className="text-afro-gold hover:text-afro-gold-light underline font-semibold">BLACKIPEDIA.NET</a>
+          </p>
+        </div>
+        
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
           Unifying Black Stories,
           <br />
