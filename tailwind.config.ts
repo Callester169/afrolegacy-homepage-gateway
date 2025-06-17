@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Afrocentric color palette
+				afro: {
+					gold: '#D4AF37',
+					'gold-light': '#F4E4BC',
+					'gold-dark': '#B8941F',
+					brown: '#8B4513',
+					'brown-light': '#CD853F',
+					'brown-dark': '#654321',
+					red: '#CC5500',
+					'red-light': '#FF7F50',
+					'red-dark': '#A0522D',
+					green: '#228B22',
+					'green-light': '#90EE90',
+					'green-dark': '#006400',
+					black: '#1C1C1C',
+					cream: '#F5F5DC'
 				}
 			},
 			borderRadius: {
@@ -84,11 +102,47 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-left': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(-30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'pulse-gold': {
+					'0%, 100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					},
+					'50%': {
+						transform: 'scale(1.05)',
+						opacity: '0.8'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in-left': 'slide-in-left 0.6s ease-out',
+				'pulse-gold': 'pulse-gold 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'afro-pattern': "url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><circle cx=\"25\" cy=\"25\" r=\"2\" fill=\"%23D4AF37\" opacity=\"0.1\"/><circle cx=\"75\" cy=\"75\" r=\"2\" fill=\"%23D4AF37\" opacity=\"0.1\"/><circle cx=\"75\" cy=\"25\" r=\"2\" fill=\"%23D4AF37\" opacity=\"0.1\"/><circle cx=\"25\" cy=\"75\" r=\"2\" fill=\"%23D4AF37\" opacity=\"0.1\"/></svg>')"
 			}
 		}
 	},
